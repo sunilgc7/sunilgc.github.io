@@ -84,7 +84,7 @@ Achieved high weed recognition accuracy by optimizing CNN models like YOLOv4 and
 ---
 
 ## 🌐 **Connect With Me**
-[LinkedIn](https://www.linkedin.com/in/sgc445) | [GitHub](https://github.com/sunilgc7) | [Personal Website](https://kharbari.com)
+[LinkedIn](https://www.linkedin.com/in/sgc445) | [GitHub](https://github.com/sunilgc7) 
 
 ---
 
