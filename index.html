@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunel GC - Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunil G C - Personal Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 40px;
-      max-width: 800px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+      color: #333;
     }
-    h1, h2 {
-      color: #2c3e50;
+    header {
+      background-color: #4b79a1;
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
-    a {
-      color: #2980b9;
-      text-decoration: none;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    a:hover {
-      text-decoration: underline;
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+    h2 {
+      color: #4b79a1;
     }
     ul {
-      list-style-type: disc;
-      padding-left: 20px;
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+    .contact-info, .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .links a {
+      color: #0b5394;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Sunel GC</h1>
-  <p>Postdoctoral Research Associate<br>
-     Collaboration: USDA & NDSU<br>
-     Focus: Computer Vision and AI in Agriculture</p>
+  <header>
+    <h1>Dr. Sunil G C</h1>
+    <p>Postdoctoral Research Associate | Precision Agriculture | Computer Vision | AI | Robotics</p>
+    <p>Fargo, ND 58102 | (701) 408-9328 | <a href="mailto:sgc908@gmail.com" style="color: #fff; text-decoration: underline;">sgc908@gmail.com</a></p>
+  </header>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:sunel.gc@gmail.com">sunel.gc@gmail.com</a><br>
-     Twitter: <a href="https://x.com/SunelGc" target="_blank">@SunelGc</a></p>
+  <section>
+    <h2>Professional Links</h2>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/sgc445">LinkedIn</a>
+      <a href="https://github.com/sunilgc7">GitHub</a>
+      <a href="https://orcid.org/0000-0002-4653-7618">ORCID</a>
+    </div>
+  </section>
 
-  <h2>Biography</h2>
-  <p>I am a multidisciplinary researcher with a background in electronics, communication, and agricultural engineering. My primary focus is on applying computer vision, AI, and robotics to solve real-world challenges in agriculture. I have experience working with ground robotics, hyperspectral/multispectral imaging, and IoT systems, and have worked as an embedded software engineer in the precision agriculture industry.</p>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D. in Agricultural and Biosystems Engineering, North Dakota State University, Fargo, ND, USA (2023)</li>
+      <li>B.Tech. in Agricultural Engineering, Tribhuvan University, Nepal (2013)</li>
+    </ul>
+  </section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>Ph.D. in Agricultural Engineering (Precision Agriculture), North Dakota State University</li>
-    <li>B.Sc. in Agricultural Engineering</li>
-  </ul>
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li>Postdoctoral Research Associate, USDA & North Dakota State University (2023–Present)</li>
+      <li>Graduate Research Assistant, North Dakota State University (2018–2023)</li>
+      <li>Embedded Software Engineer, AgLeader Technology (2017–2018)</li>
+      <li>Research Associate, Punjab Agricultural University (2016–2017)</li>
+    </ul>
+  </section>
 
-  <h2>Work Experience</h2>
-  <ul>
-    <li>Postdoctoral Research Associate, USDA & NDSU (Current)</li>
-    <li>Embedded Software Engineer, Precision Agriculture Industry</li>
-  </ul>
+  <section>
+    <h2>Teaching Experience</h2>
+    <ul>
+      <li>Guest Lecturer: Advanced Machine Vision for Precision Agriculture</li>
+      <li>Teaching Assistant: Bioinstrumentation, MATLAB for Engineers, Statics and Mechanics</li>
+    </ul>
+  </section>
 
-  <h2>Teaching Experience</h2>
-  <ul>
-    <li>Instructor/TA for courses in AI, computer vision, and agricultural engineering topics</li>
-  </ul>
-
-  <h2>Publications</h2>
-  <p>List of publications available upon request or through my <a href="https://scholar.google.com/" target="_blank">Google Scholar profile</a>.</p>
+  <section>
+    <h2>Publications</h2>
+    <ul>
+      <li>Frost damage classification in strawberry using multispectral images (Under review)</li>
+      <li>Hyperspectral imaging and AI for quantifying damage in camelina (Manuscript in preparation)</li>
+      <li>Multisensor fusion system for robotic plant phenotyping (Published)</li>
+    </ul>
+    <p>List of publications available upon request or through my <a href="https://scholar.google.com/" target="_blank">Google Scholar profile</a>.</p>
+  </section>
 </body>
 </html>
