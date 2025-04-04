@@ -4,59 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunil G C - Personal Website</title>
+  <title>Sunil GC | Personal Website</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f4f8;
-      color: #333;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
     }
+
     header {
-      background: #3f51b5;
+      background-color: #0077b6;
       color: white;
       padding: 20px;
       text-align: center;
     }
+
     nav {
       display: flex;
       justify-content: center;
-      background: #283593;
+      background-color: #023e8a;
     }
-    nav a {
-      padding: 14px 20px;
-      display: inline-block;
+
+    nav button {
+      background-color: #023e8a;
+      border: none;
       color: white;
-      text-decoration: none;
-      transition: background 0.3s;
+      padding: 14px 20px;
+      cursor: pointer;
+      font-size: 16px;
     }
-    nav a:hover {
-      background: #1a237e;
+
+    nav button:hover {
+      background-color: #03045e;
     }
-    section {
+
+    .tab-content {
       display: none;
       padding: 20px;
     }
-    section.active {
+
+    .tab-content.active {
       display: block;
     }
-    h2 {
-      color: #3f51b5;
+
+    section {
+      background-color: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-      padding: 10px;
-      background: #e8eaf6;
-      border-left: 5px solid #3f51b5;
+
+    a {
+      color: #0077b6;
     }
   </style>
 </head>
@@ -64,84 +65,88 @@
 <body>
   <header>
     <h1>Sunil G C</h1>
-    <p>Postdoctoral Research Associate | Precision Agriculture | Computer Vision | AI</p>
-    <p>Fargo, ND, USA | (701) 408-9328 | <a href="mailto:sgc908@gmail.com" style="color: #bbdefb;">sgc908@gmail.com</a></p>
-    <p>
-      <a href="https://www.linkedin.com/in/sgc445" style="color: #bbdefb;">LinkedIn</a> |
-      <a href="https://github.com/sunilgc7" style="color: #bbdefb;">GitHub</a> |
-      <a href="https://kharbari.com/" style="color: #bbdefb;">Website</a> |
-      <a href="https://orcid.org/0000-0002-4653-7618" style="color: #bbdefb;">ORCID</a>
-    </p>
+    <p> Email: <a href="mailto:sgc908@gmail.com">sgc908@gmail.com</a></p>
   </header>
 
   <nav>
-    <a href="#" onclick="showTab('bio')">Biography</a>
-    <a href="#" onclick="showTab('education')">Education</a>
-    <a href="#" onclick="showTab('industry')">Industry Experience</a>
-    <a href="#" onclick="showTab('academic')">Academic Experience</a>
-    <a href="#" onclick="showTab('teaching')">Teaching</a>
-    <a href="#" onclick="showTab('publications')">Publications</a>
-    <a href="#" onclick="showTab('contact')">Contact</a>
+    <button onclick="showTab('bio')">Biography</button>
+    <button onclick="showTab('contact')">Contact</button>
+    <button onclick="showTab('education')">Education</button>
+    <button onclick="showTab('experience')">Work Experience</button>
+    <button onclick="showTab('teaching')">Teaching</button>
+    <button onclick="showTab('publications')">Publications</button>
+    <button onclick="showTab('links')">Links</button>
   </nav>
 
-  <div class="container">
-    <section id="bio" class="active">
+  <div id="bio" class="tab-content active">
+    <section>
       <h2>Biography</h2>
-      <p>I am a Postdoctoral Research Associate with a multidisciplinary background in electronics, communication, and agricultural engineering. I work at the intersection of precision agriculture, AI, and computer vision, focusing on projects involving drone technology, hyperspectral imaging, robotics, and stress detection in crops like strawberries, camelina, and canola.</p>
+      <p>I am a Postdoctoral Research Associate collaborating with USDA and NDSU researchers, focusing on applying computer vision and AI to quantify frost damage in crops, including strawberries, camelina, and canola. I have experience working with ground robotics, hyperspectral and multispectral sensors, cloud-based data acquisition systems, and IoT technology. My expertise lies in the field of precision agriculture, with a multidisciplinary background in electronics, communication, and agricultural engineering. My focus areas include drone technology, AI, robotics, software, precision weed management, and plant stress detection and quantification.</p>
+      <p>I have also worked as an embedded software engineer in the precision agriculture industry and have developed computer vision and AI pipelines for agricultural applications, publishing research in these areas. I’m involved in open-source precision agriculture software development focused on AI and computer vision.</p>
     </section>
+  </div>
 
-    <section id="education">
+  <div id="contact" class="tab-content">
+    <section>
+      <h2>Contact Details</h2>
+      <p><strong>Name:</strong> Sunil GC</p>
+      <p><strong>Phone:</strong> (701) 408-9328</p>
+      <p><strong>Email:</strong> <a href="mailto:sgc908@gmail.com">sgc908@gmail.com</a></p>
+    </section>
+  </div>
+
+  <div id="education" class="tab-content">
+    <section>
       <h2>Education</h2>
+      <p>Details about degrees, institutions, and timeline can be added here.</p>
+    </section>
+  </div>
+
+  <div id="experience" class="tab-content">
+    <section>
+      <h2>Work Experience</h2>
       <ul>
-        <li>Ph.D. in Agricultural and Biosystems Engineering – North Dakota State University</li>
-        <li>M.Tech in Electronics and Communication Engineering – Tribhuvan University</li>
-        <li>B.E. in Agricultural Engineering – Tribhuvan University</li>
+        <li>Postdoctoral Research Associate – USDA & NDSU – Focus on computer vision and AI for frost damage quantification in strawberry, camelina, and canola.</li>
+        <li>Embedded Software Engineer in the precision agriculture industry.</li>
+        <li>Experience with ground robotics, hyperspectral/multispectral sensors, cloud data systems, IoT.</li>
+        <li>Developer of computer vision and AI pipelines for agricultural use.</li>
       </ul>
     </section>
+  </div>
 
-    <section id="industry">
-      <h2>Industry Experience</h2>
-      <ul>
-        <li>Embedded Software Engineer – Precision Agriculture Industry</li>
-        <li>Collaborator on open-source software development for AI in agriculture</li>
-      </ul>
+  <div id="teaching" class="tab-content">
+    <section>
+      <h2>Teaching Experience</h2>
+      <p>Teaching-related experiences or assistantships can be added here if applicable.</p>
     </section>
+  </div>
 
-    <section id="academic">
-      <h2>Academic Experience</h2>
-      <ul>
-        <li>Postdoctoral Research Associate – USDA & NDSU</li>
-        <li>Research in frost damage quantification using multispectral and hyperspectral images</li>
-        <li>Experience with ground robotics, data acquisition systems, and plant stress quantification</li>
-      </ul>
-    </section>
-
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <ul>
-        <li>Guided graduate students in computer vision and AI projects</li>
-        <li>One year of discounted support post-graduation for mentees</li>
-      </ul>
-    </section>
-
-    <section id="publications">
+  <div id="publications" class="tab-content">
+    <section>
       <h2>Publications</h2>
       <ul>
         <li>Frost damage classification in strawberry using multispectral images</li>
-        <li>Damage quantification in strawberry using deep learning image segmentation (upcoming)</li>
-        <li>Multiple AI and computer vision publications in agricultural research</li>
+        <li>Damage quantification using deep learning image segmentation</li>
+        <li>Other publications related to AI, computer vision, and precision agriculture.</li>
       </ul>
     </section>
+  </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:sgc908@gmail.com">sgc908@gmail.com</a></p>
+  <div id="links" class="tab-content">
+    <section>
+      <h2>Professional Links</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/sgc445" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/sunilgc7" target="_blank">GitHub</a></li>
+        <li><a href="https://orcid.org/0000-0002-4653-7618" target="_blank">ORCID</a></li>
+      </ul>
     </section>
   </div>
 
   <script>
     function showTab(tabId) {
-      document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
       document.getElementById(tabId).classList.add('active');
     }
   </script>
